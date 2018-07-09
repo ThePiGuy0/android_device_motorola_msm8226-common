@@ -105,10 +105,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdrhax:system/vendor/etc/hdrhax
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # Dalvik properties
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
