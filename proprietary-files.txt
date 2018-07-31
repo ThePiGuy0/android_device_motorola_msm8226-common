@@ -21,9 +21,9 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
-bin/btnvtool:vendor/bin/btnvtool
-bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib/libbtnv.so
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # Camera
 # vendor/lib/libmmjpeg.so - from shamu
@@ -100,6 +100,11 @@ vendor/lib/libQSEEComAPI.so|8371b1625921efb5779a644edc6b79ff089104e4
 vendor/lib/librpmb.so|930cada51c737dd8f95a94a8013a5caedd3de60e
 vendor/lib/libssd.so|1bfb2ccaa33455a9b9b2e0c4ae34e7586045b299
 
+# FM
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
+-lib/vendor.qti.hardware.fm@1.0.so
+
 # GPS
 bin/location-mq:vendor/bin/location-mq
 etc/gps.conf
@@ -131,6 +136,8 @@ vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/libsc-a3xx.so
+vendor/lib/libbccQTI.so
+vendor/lib/libscale.so
 
 # Graphics firmware
 etc/firmware/a300_pfp.fw
@@ -139,23 +146,18 @@ etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
 
 # Media
-vendor/lib/libDivxDrm.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
-vendor/lib/libSHIMDivxDrm.so
 
 # Moto
 bin/dbvc_atvc_property_set:vendor/bin/dbvc_atvc_property_set
 
 # Perf
 bin/mpdecision:vendor/bin/mpdecision
-vendor/lib/libqc-opt.so
+vendor/lib/libqti-perfd-client.so
 
 # Qualcomm framework
 bin/irsc_util:vendor/bin/irsc_util
@@ -200,6 +202,9 @@ vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
+
+# STLPort
+vendor/lib/libstlport.so
 
 # Thermal
 bin/thermal-engine:vendor/bin/thermal-engine
